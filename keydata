@@ -1,0 +1,16 @@
+-- key-data.lua
+
+-- Key chính
+local Key = "NNK"
+
+-- Thời gian tạo key (tính bằng UNIX Timestamp)
+local CreatedAt =  os.time()
+
+-- Thời gian hết hạn (1 ngày)
+local ExpireAt = CreatedAt + (24 * 60 * 60)
+
+return {
+    Key = Key,
+    CreatedAt = CreatedAt,
+    ExpireAt = ExpireAt
+}
